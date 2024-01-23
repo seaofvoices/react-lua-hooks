@@ -1,0 +1,8 @@
+std = "selene_definitions"
+
+[rules]
+global_usage = "allow"
+shadowing = "allow"
+
+[config]
+empty_if = { comments_count = true }

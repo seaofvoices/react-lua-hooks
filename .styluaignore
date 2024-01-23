@@ -1,0 +1,4 @@
+/node_modules
+/roblox
+
+**/*.d.lua

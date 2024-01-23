@@ -1,0 +1,5 @@
+{
+    "luau-lsp.require.directoryAliases": {
+        "@pkg": "node_modules/.luau-aliases"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "npmluau",
+    "lint": "sh ./scripts/analyze.sh && selene packages",
+    "lint:luau": "sh ./scripts/analyze.sh",
+    "lint:selene": "selene packages",
+    "format": "stylua .",
+    "style-check": "stylua . --check",
+    "verify-pack": "yarn workspaces foreach -A --no-private pack --dry-run",
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "npmluau": "^0.1.1"
+  },
+  "packageManager": "yarn@4.0.2"
+}

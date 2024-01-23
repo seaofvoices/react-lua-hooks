@@ -1,0 +1,24 @@
+{
+  "name": "@seaofvoices/react-roblox-use-service",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seaofvoices/react-lua-hooks.git",
+    "directory": "packages/react-roblox-use-service"
+  },
+  "keywords": [
+    "lua",
+    "luau",
+    "react",
+    "roblox",
+    "hook"
+  ],
+  "license": "MIT",
+  "main": "./src/init.lua",
+  "dependencies": {
+    "@jsdotlua/react": "^17.1.0"
+  },
+  "devDependencies": {
+    "npmluau": "^0.1.1"
+  }
+}

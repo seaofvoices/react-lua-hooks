@@ -1,0 +1,35 @@
+name: Release
+
+on: workflow_dispatch
+
+jobs:
+  publish-package:
+    name: Publish package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: yarn
+          cache-dependency-path: yarn.lock
+
+      - name: Install packages
+        run: yarn install --immutable
+
+      - name: Run npmluau
+        run: yarn run prepare
+
+      - name: Authenticate yarn
+        run: |-
+          yarn config set npmAlwaysAuth true
+          yarn config set npmAuthToken $NPM_AUTH_TOKEN
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to npm
+        run: yarn workspaces foreach --all --no-private npm publish --access public --tolerate-republish
