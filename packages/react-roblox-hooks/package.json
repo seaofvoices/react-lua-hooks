@@ -19,7 +19,7 @@
     "@jsdotlua/react": "^17.1.0",
     "@seaofvoices/react-lua-use-constant": "workspace:^",
     "@seaofvoices/react-roblox-use-service": "workspace:^",
-    "luau-disk": "^0.1.0"
+    "luau-disk": "^0.1.1"
   },
   "devDependencies": {
     "npmluau": "^0.1.1"

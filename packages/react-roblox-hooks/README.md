@@ -1,3 +1,15 @@
+<div align="center">
+
+[![checks](https://github.com/seaofvoices/react-lua-hooks/actions/workflows/test.yml/badge.svg)](https://github.com/seaofvoices/react-lua-hooks/actions/workflows/test.yml)
+![version](https://img.shields.io/npm/v/@seaofvoices/react-roblox-hooks?label=version)
+[![GitHub top language](https://img.shields.io/github/languages/top/seaofvoices/react-lua-hooks)](https://github.com/luau-lang/luau)
+![license](https://img.shields.io/npm/l/@seaofvoices/react-roblox-hooks)
+![npm](https://img.shields.io/npm/dt/@seaofvoices/react-roblox-hooks)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/seaofvoices)
+
+</div>
+
 # react-roblox-hooks
 
 This package is a collection of hooks for [react-lua](https://github.com/jsdotlua/react-lua), specifically target for development on Roblox.

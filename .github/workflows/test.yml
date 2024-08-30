@@ -36,7 +36,7 @@ jobs:
         run: yarn run prepare
 
       - name: Run linter
-        run: yarn run lint:selene
+        run: yarn run lint
 
       - name: Verify code style
         run: yarn run style-check
