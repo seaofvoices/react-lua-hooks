@@ -61,7 +61,7 @@ end
 
 A hook that wraps `useEffect` to handle multiple types of values that can be cleaned up with [luau-teardown](https://github.com/seaofvoices/luau-teardown).
 
-Instead of having to absolutely a single function for the clean up, the effect can return any number of values support by `luau-teardown` (`thread`, functions, `Instance`, `RBXScriptConnection`, etc.)
+The `useEffect` callback must absolutely return a single function for the clean up. The `useTeardownEffect` is much more flexible, as you can return any number of values supported by `luau-teardown` (`thread`, functions, `Instance`, `RBXScriptConnection`, etc.)
 
 ```lua
 function useTeardownEffect(effect: () -> ...Teardown, deps: { any }?)
@@ -71,13 +71,41 @@ function useTeardownEffect(effect: () -> ...Teardown, deps: { any }?)
 
 ```lua
 local function Component(props)
+    local target = props.target
+
     useTeardownEffect(function()
+        local container = Instance.new("Folder")
+        container.Parent = workspace
+
+        return
+            container,
+            target.ChildAdded:Connect(function()
+                -- ...
+            end),
+            task.delay(1, function()
+                -- ...
+            end)
+    end, { target })
+
+    -- the example above is equivalent to this useEffect
+    useEffect(function()
+        local container = Instance.new("Folder")
+        container.Parent = workspace
+
+        local connection = target.ChildAdded:Connect(function()
+            -- ...
+        end)
+
         local thread = task.delay(1, function()
             -- ...
         end)
 
-        return thread
-    end)
+        return function()
+            container:Destroy()
+            connection:Disconnect()
+            task.cancel( thread)
+        end
+    end, { target })
 end
 ```
 
