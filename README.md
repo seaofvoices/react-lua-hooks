@@ -1,3 +1,17 @@
+<div align="center">
+
+[![checks](https://github.com/seaofvoices/react-lua-hooks/actions/workflows/test.yml/badge.svg)](https://github.com/seaofvoices/react-lua-hooks/actions/workflows/test.yml)
+[![GitHub top language](https://img.shields.io/github/languages/top/seaofvoices/react-lua-hooks)](https://github.com/luau-lang/luau)
+![version](https://img.shields.io/npm/v/@seaofvoices/react-lua-hooks?label=react-lua-hooks)
+![version](https://img.shields.io/npm/v/@seaofvoices/react-lua-hooks?label=react-roblox-hooks)
+![license](https://img.shields.io/npm/l/@seaofvoices/react-lua-hooks)
+![npm](https://img.shields.io/npm/dt/@seaofvoices/react-lua-hooks?label=react-lua-hooks%20downloads)
+![npm](https://img.shields.io/npm/dt/@seaofvoices/react-roblox-hooks?label=react-roblox-hooks%20downloads)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/seaofvoices)
+
+</div>
+
 # React Lua Hooks
 
 This project consists of two main packages that contains [react-lua](https://github.com/jsdotlua/react-lua) hooks.
@@ -24,6 +38,7 @@ npm install @seaofvoices/react-roblox-hooks
 # Content
 
 - [Lua hooks](packages/react-lua-hooks/README.md#content)
+    - [useConstant](packages/react-lua-use-constant/README.md#usage)
     - [useDefaultState](packages/react-lua-hooks/README.md#usedefaultstate)
     - [usePrevious](packages/react-lua-hooks/README.md#useprevious)
     - [usePreviousDistinct](packages/react-lua-hooks/README.md#usepreviousdistinct)

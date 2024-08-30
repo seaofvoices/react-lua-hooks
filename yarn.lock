@@ -123,7 +123,6 @@ __metadata:
   dependencies:
     "@jsdotlua/react": "npm:^17.1.0"
     "@seaofvoices/react-lua-use-constant": "workspace:^"
-    luau-disk: "npm:^0.1.0"
     npmluau: "npm:^0.1.1"
   languageName: unknown
   linkType: soft
@@ -144,7 +143,7 @@ __metadata:
     "@jsdotlua/react": "npm:^17.1.0"
     "@seaofvoices/react-lua-use-constant": "workspace:^"
     "@seaofvoices/react-roblox-use-service": "workspace:^"
-    luau-disk: "npm:^0.1.0"
+    luau-disk: "npm:^0.1.1"
     npmluau: "npm:^0.1.1"
   languageName: unknown
   linkType: soft
@@ -165,10 +164,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luau-disk@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "luau-disk@npm:0.1.0"
-  checksum: ae5b5f6d4ab4c1fd8385236f511cf68f9c34f4f82d65f2c6beae33874b5f781401d4f1439c8ce682ab0db4ee205e638d81a300408ffe5a22305804a4d71acbc4
+"luau-disk@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "luau-disk@npm:0.1.1"
+  checksum: ee97edfe07671c3989f31b21cdef1001d845dbbc4940b41a2cb9b74e1c1bb0008c339348c595669177884ad8f0df4b6bf14ec66457854edcccb8e18fc3e9e4eb
   languageName: node
   linkType: hard
 

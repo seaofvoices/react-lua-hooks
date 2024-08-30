@@ -1,3 +1,15 @@
+<div align="center">
+
+[![checks](https://github.com/seaofvoices/react-lua-hooks/actions/workflows/test.yml/badge.svg)](https://github.com/seaofvoices/react-lua-hooks/actions/workflows/test.yml)
+![version](https://img.shields.io/npm/v/@seaofvoices/react-lua-hooks?label=version)
+[![GitHub top language](https://img.shields.io/github/languages/top/seaofvoices/react-lua-hooks)](https://github.com/luau-lang/luau)
+![license](https://img.shields.io/npm/l/@seaofvoices/react-lua-hooks)
+![npm](https://img.shields.io/npm/dt/@seaofvoices/react-lua-hooks)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/seaofvoices)
+
+</div>
+
 # react-lua-hooks
 
 This package is a collection of hooks for [react-lua](https://github.com/jsdotlua/react-lua).
@@ -21,6 +33,7 @@ npm install @seaofvoices/react-lua-hooks
 **Hooks:**
 
 - [useDefaultState](#usedefaultstate)
+- [useTeardownEffect](#useteardowneffect)
 - [usePrevious](#useprevious)
 - [usePreviousDistinct](#usepreviousdistinct)
 - [useToggle](#usetoggle)
@@ -41,6 +54,28 @@ function useDefaultState<T>(initialValue: T?, defaultValue: T): (T, (T) -> ())
 ```lua
 local function Component(props)
     local value, setValue = useDefaultState(nil, 10)
+end
+```
+
+### `useTeardownEffect`
+
+A hook that wraps `useEffect` to handle multiple types of values that can be cleaned up with [luau-teardown](https://github.com/seaofvoices/luau-teardown).
+
+```lua
+function useTeardownEffect(effect: () -> ...Teardown, deps: { any }?)
+```
+
+#### Example
+
+```lua
+local function Component(props)
+    useTeardownEffect(function()
+        local thread = task.delay(1, function()
+            -- ...
+        end)
+
+        return thread
+    end)
 end
 ```
 
