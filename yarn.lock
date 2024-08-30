@@ -123,6 +123,7 @@ __metadata:
   dependencies:
     "@jsdotlua/react": "npm:^17.1.0"
     "@seaofvoices/react-lua-use-constant": "workspace:^"
+    luau-teardown: "npm:^0.1.4"
     npmluau: "npm:^0.1.1"
   languageName: unknown
   linkType: soft
@@ -168,6 +169,13 @@ __metadata:
   version: 0.1.1
   resolution: "luau-disk@npm:0.1.1"
   checksum: ee97edfe07671c3989f31b21cdef1001d845dbbc4940b41a2cb9b74e1c1bb0008c339348c595669177884ad8f0df4b6bf14ec66457854edcccb8e18fc3e9e4eb
+  languageName: node
+  linkType: hard
+
+"luau-teardown@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "luau-teardown@npm:0.1.4"
+  checksum: 4e08d13ec8b0d20bea97fe92c9ce3163844751d73d1b6329679fbe24da5a912c7ea9061db5e935392c1d4d8309ebeae870f727651e843ec903a68edc1129ee0d
   languageName: node
   linkType: hard
 
