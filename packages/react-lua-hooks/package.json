@@ -17,7 +17,8 @@
   "main": "./src/init.lua",
   "dependencies": {
     "@jsdotlua/react": "^17.1.0",
-    "@seaofvoices/react-lua-use-constant": "workspace:^"
+    "@seaofvoices/react-lua-use-constant": "workspace:^",
+    "luau-teardown": "^0.1.4"
   },
   "devDependencies": {
     "npmluau": "^0.1.1"

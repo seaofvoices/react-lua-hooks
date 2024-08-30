@@ -4,6 +4,7 @@ local useDebouncedState = require('./useDebouncedState')
 local useDefaultState = require('./useDefaultState')
 local usePrevious = require('./usePrevious')
 local usePreviousDistinct = require('./usePreviousDistinct')
+local useTeardownEffect = require('./useTeardownEffect')
 local useThrottledState = require('./useThrottledState')
 local useToggle = require('./useToggle')
 local useUnmount = require('./useUnmount')
@@ -16,6 +17,7 @@ return {
     useDefaultState = useDefaultState,
     usePrevious = usePrevious,
     usePreviousDistinct = usePreviousDistinct,
+    useTeardownEffect = useTeardownEffect,
     useThrottledState = useThrottledState,
     useToggle = useToggle,
     useUnmount = useUnmount,

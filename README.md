@@ -42,6 +42,7 @@ npm install @seaofvoices/react-roblox-hooks
     - [useDefaultState](packages/react-lua-hooks/README.md#usedefaultstate)
     - [usePrevious](packages/react-lua-hooks/README.md#useprevious)
     - [usePreviousDistinct](packages/react-lua-hooks/README.md#usepreviousdistinct)
+    - [useTeardownEffect](packages/react-lua-hooks/README.md#useteardowneffect)
     - [useToggle](packages/react-lua-hooks/README.md#usetoggle)
     - [useUnmount](packages/react-lua-hooks/README.md#useunmount)
     - [useDebouncedState](packages/react-lua-hooks/README.md#usedebouncedstate)

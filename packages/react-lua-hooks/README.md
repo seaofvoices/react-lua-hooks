@@ -61,6 +61,8 @@ end
 
 A hook that wraps `useEffect` to handle multiple types of values that can be cleaned up with [luau-teardown](https://github.com/seaofvoices/luau-teardown).
 
+Instead of having to absolutely a single function for the clean up, the effect can return any number of values support by `luau-teardown` (`thread`, functions, `Instance`, `RBXScriptConnection`, etc.)
+
 ```lua
 function useTeardownEffect(effect: () -> ...Teardown, deps: { any }?)
 ```
