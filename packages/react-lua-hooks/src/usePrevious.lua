@@ -6,8 +6,6 @@ local useEffect = React.useEffect
 local function usePrevious<T>(value: T): T?
     local ref = useRef(nil :: T?)
 
-    ref.current = value
-
     useEffect(function()
         ref.current = value
     end)

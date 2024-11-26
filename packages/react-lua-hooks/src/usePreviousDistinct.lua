@@ -3,19 +3,24 @@ local React = require('@pkg/@jsdotlua/react')
 local useRef = React.useRef
 
 local function usePreviousDistinct<T>(value: T, isEqual: ((T, T) -> boolean)?): T?
-    local ref = useRef(value)
-    local previousValue = useRef(nil :: T?)
+    local previousRef = useRef(nil :: { value: T }?)
+    local currentRef = useRef(nil :: { value: T }?)
 
-    local current = ref.current :: T
+    if currentRef.current == nil then
+        currentRef.current = { value = value }
+    else
+        local currentIsEqual = if isEqual ~= nil and previousRef.current ~= nil
+            then isEqual(value, currentRef.current.value)
+            elseif previousRef.current == nil then false
+            else value == currentRef.current.value
 
-    local currentIsEqual = if isEqual then isEqual(current, value) else current == value
-
-    if not currentIsEqual then
-        previousValue.current = current
-        ref.current = value
+        if not currentIsEqual then
+            previousRef.current = { value = currentRef.current.value }
+            currentRef.current = { value = value }
+        end
     end
 
-    return previousValue.current
+    return previousRef.current and previousRef.current.value
 end
 
 return usePreviousDistinct
