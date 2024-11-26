@@ -11,10 +11,13 @@
     "lint:selene": "selene packages",
     "format": "stylua .",
     "style-check": "stylua . --check",
+    "test:roblox": "sh ./scripts/roblox-test.sh",
     "verify-pack": "yarn workspaces foreach -A --no-private pack --dry-run",
     "clean": "rm -rf node_modules"
   },
   "devDependencies": {
+    "@jsdotlua/jest": "^3.6.1-rc.2",
+    "@jsdotlua/jest-globals": "^3.6.1-rc.2",
     "npmluau": "^0.1.1"
   },
   "packageManager": "yarn@4.0.2"
