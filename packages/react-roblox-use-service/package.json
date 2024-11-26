@@ -1,5 +1,6 @@
 {
   "name": "@seaofvoices/react-roblox-use-service",
+  "description": "A React hook to easily obtain and mock Roblox services",
   "version": "1.0.0",
   "repository": {
     "type": "git",

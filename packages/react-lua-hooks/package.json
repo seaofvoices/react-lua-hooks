@@ -1,5 +1,6 @@
 {
   "name": "@seaofvoices/react-lua-hooks",
+  "description": "A collection of React hook for Luau",
   "version": "0.1.0",
   "repository": {
     "type": "git",

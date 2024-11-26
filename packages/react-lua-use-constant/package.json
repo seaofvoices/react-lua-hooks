@@ -1,5 +1,6 @@
 {
   "name": "@seaofvoices/react-lua-use-constant",
+  "description": "A React hook to create a value once. Prefer using this hook from @seaofvoices/react-lua-hooks",
   "version": "1.0.0",
   "repository": {
     "type": "git",

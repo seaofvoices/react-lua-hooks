@@ -1,11 +1,11 @@
 {
-  "name": "@seaofvoices/react-roblox-hooks",
-  "description": "A collection of React hooks specific to the Roblox environment",
+  "name": "@seaofvoices/react-render-hook",
+  "description": "A test helper to render React hooks using react-testing-library",
   "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/seaofvoices/react-lua-hooks.git",
-    "directory": "packages/react-roblox-hooks"
+    "directory": "packages/react-render-hook"
   },
   "keywords": [
     "lua",
@@ -18,9 +18,7 @@
   "main": "./src/init.lua",
   "dependencies": {
     "@jsdotlua/react": "^17.1.0",
-    "@seaofvoices/react-lua-use-constant": "workspace:^",
-    "@seaofvoices/react-roblox-use-service": "workspace:^",
-    "luau-disk": "^0.1.1"
+    "@jsdotlua/react-testing-library": "^12.2.1-rc.1"
   },
   "devDependencies": {
     "npmluau": "^0.1.1"
