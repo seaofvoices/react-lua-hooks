@@ -551,7 +551,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jsdotlua/react-roblox@npm:^17.1.0":
+"@jsdotlua/react-roblox@npm:^17.1.0, @jsdotlua/react-roblox@npm:^17.2.0":
   version: 17.2.0
   resolution: "@jsdotlua/react-roblox@npm:17.2.0"
   dependencies:
@@ -642,8 +642,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@seaofvoices/react-lua-hooks@workspace:packages/react-lua-hooks"
   dependencies:
+    "@jsdotlua/jest-globals": "npm:^3.6.1-rc.2"
     "@jsdotlua/react": "npm:^17.1.0"
+    "@jsdotlua/react-roblox": "npm:^17.2.0"
     "@seaofvoices/react-lua-use-constant": "workspace:^"
+    "@seaofvoices/react-render-hook": "workspace:^"
     luau-teardown: "npm:^0.1.4"
     npmluau: "npm:^0.1.1"
   languageName: unknown

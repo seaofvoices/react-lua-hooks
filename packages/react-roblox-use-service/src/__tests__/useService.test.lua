@@ -48,5 +48,3 @@ it('returns a different service after re-rendering', function()
 
     expect(renderResult.result.current).toBe(workspaceMock)
 end)
-
-return nil
