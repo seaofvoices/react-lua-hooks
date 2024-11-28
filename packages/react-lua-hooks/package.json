@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@jsdotlua/jest-globals": "^3.6.1-rc.2",
-    "@jsdotlua/react-roblox": "^17.2.0",
+    "@jsdotlua/react-testing-library": "^12.2.1-rc.1",
     "@seaofvoices/react-render-hook": "workspace:^",
     "npmluau": "^0.1.1"
   }

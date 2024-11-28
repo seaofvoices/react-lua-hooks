@@ -1,12 +1,12 @@
-local ReactRoblox = require('@pkg/@jsdotlua/react-roblox')
 local jestGlobals = require('@pkg/@jsdotlua/jest-globals')
 local renderHook = require('@pkg/@seaofvoices/react-render-hook').renderHook
+local ReactTesting = require('@pkg/@jsdotlua/react-testing-library')
 
 local useDefaultState = require('../useDefaultState')
 
 local expect = jestGlobals.expect
 local it = jestGlobals.it
-local act = ReactRoblox.act
+local act = ReactTesting.act
 
 it('returns the default value when the value is nil', function()
     local renderResult = renderHook(function()
