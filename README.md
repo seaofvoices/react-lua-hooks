@@ -14,10 +14,11 @@
 
 # React Lua Hooks
 
-This project consists of two main packages that contains [react-lua](https://github.com/jsdotlua/react-lua) hooks.
+This project consists of three main packages that revolves around [react-lua](https://github.com/jsdotlua/react-lua) hooks:
 
 - [Lua hooks](packages/react-lua-hooks/README.md#content): general-purpose collection of hooks for [react-lua](https://github.com/jsdotlua/react-lua)
 - [Roblox hooks](packages/react-roblox-hooks/README.md#content): hooks specifically made for Roblox development
+- [react-render-hook](packages/react-render-hook/README.md#content): a utility function to quickly test React hooks
 
 # Installation
 
@@ -26,6 +27,8 @@ Add these packages to your dependencies:
 ```bash
 yarn add @seaofvoices/react-lua-hooks
 yarn add @seaofvoices/react-roblox-hooks
+
+yarn add -D @seaofvoices/react-render-hook
 ```
 
 Or if you are using `npm`:
@@ -33,6 +36,8 @@ Or if you are using `npm`:
 ```bash
 npm install @seaofvoices/react-lua-hooks
 npm install @seaofvoices/react-roblox-hooks
+
+npm install @seaofvoices/react-render-hook --save-dev
 ```
 
 # Content
@@ -59,6 +64,9 @@ npm install @seaofvoices/react-roblox-hooks
     - [useTaggedInstances](packages/react-roblox-hooks/README.md#usetaggedinstances)
     - [useTextSize](packages/react-roblox-hooks/README.md#usetextsize)
     - [useViewportSize](packages/react-roblox-hooks/README.md#useviewportsize)
+- [react-render-hook](packages/react-render-hook/README.md#content)
+    - [renderHook](packages/react-render-hook/README.md#renderhook)
+    - [createRenderHook](packages/react-render-hook/README.md#createrenderhook)
 
 # Other Lua Environments Support
 
