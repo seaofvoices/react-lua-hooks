@@ -1,6 +1,6 @@
-local ReactRoblox = require('@pkg/@jsdotlua/react-roblox')
 local jestGlobals = require('@pkg/@jsdotlua/jest-globals')
 local renderHook = require('@pkg/@seaofvoices/react-render-hook').renderHook
+local ReactTesting = require('@pkg/@jsdotlua/react-testing-library')
 
 local useToggle = require('../useToggle')
 
@@ -8,7 +8,7 @@ local expect = jestGlobals.expect
 local it = jestGlobals.it
 local describe = jestGlobals.describe
 local beforeEach = jestGlobals.beforeEach
-local act = ReactRoblox.act
+local act = ReactTesting.act
 
 it('initializes to true', function()
     local renderResult = renderHook(useToggle :: any, true)
